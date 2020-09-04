@@ -1,9 +1,9 @@
 define(function (require) {
     /*定义数据模型*/
     var Vue = require('vue'),
-    Vuex = require('vueX'),
+    Vuex = require('vueX')//,
     //user = require('app/store/user/index'),
-    app = require('app/store/app/index')
+    //app = require('app/store/app/index')
     ;
 
     var state = {
@@ -34,12 +34,10 @@ define(function (require) {
         mutations: mutations,
         strict: false
 
-          /*,modules: {
-            user: function(resolve){
-                require('app/store/user/index',resolve);
-            },
-            app
-          }*/
+          // ,modules: {
+          //   //user,
+          //   app
+          // }
     });
     return store;
 });
