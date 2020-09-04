@@ -6,34 +6,35 @@ define(["vue", "vueRouter", "require"], function (Vue, vueRouter, require) {
                 path: "/",
                 name: "_index",
 
-                components : {
+                /*components : {
                     default: function component(resolve) {
                         require(["view/main1/layout/index"], resolve);
                     }
                     ,main : function component(resolve) {
                         require(["view/main1/index/index"], resolve);
                     }
-                }
-                /*component: function component(resolve) {
-                    require(["view/main1/layout/index"], resolve);
                 }*/
-                /*, children: [{
+                component: function component(resolve) {
+                    require(["view/main1/layout/index"], resolve);
+                }, 
+                /*全部的都在这个地方*/
+                children: [{
                     path: 'index',
                     name: 'index',
                     component: function component(resolve) {
                         require(["view/main1/index/index"], resolve);
                     }
-                }]*/
+                }]
             },
-            
-            {
+
+/*            {
                 path: "/index",
                 name: "index",
                 //redirect: '/internet',
                 component: function component(resolve) {
                     require(["view/main1/index/index"], resolve);
                 }
-            },
+            },*/
 
             {
                 path: "/login",

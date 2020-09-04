@@ -17,6 +17,9 @@ define(function (require) {
         mounted: function mounted() {
             var that = this;
             console.log('88888');
+
+            /*加载form*/
+            //layui.use('form', function(){});
         }
     });
     return vueComponent;
