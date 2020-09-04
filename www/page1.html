@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 1</title>
+        <script src="src/lib/require.js"></script>
+        <script>
+            requirejs(['./src/config'], function (config) {
+                requirejs(['app/app1']);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="app" v-cloak>
+            <transition name="main-fade" mode="out-in">
+                <indext></indext>
+            </transition>
+        </div>
+    </body>
+</html>
